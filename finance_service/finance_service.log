@@ -1,0 +1,402 @@
+2024-11-28 23:13:05,888 - utils - INFO - Verifying token
+2024-11-28 23:13:05,926 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:13:05,927 - utils - INFO - Token verified successfully
+2024-11-28 23:13:05,928 - routes - INFO - User 1 is depositing 123.0
+2024-11-28 23:13:05,928 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:13:05,956 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:13:05,957 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:13:05,957 - utils - INFO - Updating balance for user 1 to 4412.0
+2024-11-28 23:13:05,998 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:13:05,998 - utils - INFO - Balance updated for user 1
+2024-11-28 23:13:06,004 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:13:06,004 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 33098), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:06,005 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:13:06,009 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:06,013 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:06,014 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:06,014 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:13:06,016 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:13:06,017 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad81202c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:13:06,017 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:13:06,017 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:13:06,018 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 33098), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:06,018 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 33098), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:06,018 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 33098), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:06,019 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:13:06,019 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:13:06,019 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 33098), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:06,019 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:13:06,020 - utils - INFO - Adding transaction history for user 1
+2024-11-28 23:13:06,058 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:13:06,059 - utils - INFO - Transaction history added for user 1
+2024-11-28 23:13:06,059 - routes - INFO - User 1 deposited 123.0, new balance is 4412.0
+2024-11-28 23:13:12,712 - utils - INFO - Verifying token
+2024-11-28 23:13:12,739 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:13:12,740 - utils - INFO - Token verified successfully
+2024-11-28 23:13:12,741 - routes - INFO - User 1 is requesting balance
+2024-11-28 23:13:12,741 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:13:12,772 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:13:12,773 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:13:12,773 - routes - INFO - User 1 balance is 4412.0
+2024-11-28 23:13:19,946 - utils - INFO - Verifying token
+2024-11-28 23:13:19,974 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:13:19,975 - utils - INFO - Token verified successfully
+2024-11-28 23:13:19,976 - routes - INFO - User 1 is withdrawing 123.0
+2024-11-28 23:13:19,976 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:13:20,007 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:13:20,008 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:13:20,008 - utils - INFO - Updating balance for user 1 to 4289.0
+2024-11-28 23:13:20,059 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:13:20,060 - utils - INFO - Balance updated for user 1
+2024-11-28 23:13:20,063 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:13:20,064 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49068), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:20,064 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:13:20,067 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:20,067 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:20,068 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:13:20,068 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:13:20,070 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:13:20,071 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad76588c0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:13:20,071 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:13:20,071 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:13:20,072 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49068), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:20,072 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49068), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:20,072 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49068), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:20,072 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:13:20,073 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:13:20,073 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49068), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:13:20,073 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:13:20,074 - utils - INFO - Adding transaction history for user 1
+2024-11-28 23:13:20,126 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:13:20,127 - utils - INFO - Transaction history added for user 1
+2024-11-28 23:13:20,128 - routes - INFO - User 1 withdrew 123.0, new balance is 4289.0
+2024-11-28 23:14:06,093 - utils - INFO - Verifying token
+2024-11-28 23:14:06,119 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:14:06,120 - utils - INFO - Token verified successfully
+2024-11-28 23:14:06,121 - routes - INFO - User 1 is depositing 123.0
+2024-11-28 23:14:06,121 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:14:06,148 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:14:06,149 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:14:06,150 - utils - INFO - Updating balance for user 1 to 4412.0
+2024-11-28 23:14:06,188 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:14:06,188 - utils - INFO - Balance updated for user 1
+2024-11-28 23:14:06,191 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:14:06,192 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 46400), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:14:06,192 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:14:06,194 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:14:06,195 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:14:06,195 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:14:06,195 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:14:06,197 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:14:06,198 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fbda0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:14:06,199 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:14:06,199 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:14:06,200 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 46400), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:14:06,200 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 46400), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:14:06,201 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 46400), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:14:06,201 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:14:06,201 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:14:06,202 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 46400), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:14:06,202 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:14:06,202 - utils - INFO - Adding transaction history for user 1
+2024-11-28 23:14:06,241 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:14:06,241 - utils - INFO - Transaction history added for user 1
+2024-11-28 23:14:06,242 - routes - INFO - User 1 deposited 123.0, new balance is 4412.0
+2024-11-28 23:25:49,764 - utils - INFO - Verifying token
+2024-11-28 23:25:49,793 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:49,794 - utils - INFO - Token verified successfully
+2024-11-28 23:25:49,795 - routes - INFO - User 1 is depositing 100.0
+2024-11-28 23:25:49,795 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:25:49,823 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:49,823 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:25:49,824 - utils - INFO - Updating balance for user 1 to 4297.0
+2024-11-28 23:25:49,871 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:25:49,872 - utils - INFO - Balance updated for user 1
+2024-11-28 23:25:49,874 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:25:49,874 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49344), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:25:49,876 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:25:49,879 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:25:49,879 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:25:49,879 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:25:49,880 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:25:49,882 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:25:49,883 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7f6ad80fb950> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:25:49,883 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:25:49,883 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:25:49,884 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49344), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:25:49,884 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49344), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:25:49,885 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49344), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:25:49,885 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:25:49,885 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:25:49,885 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49344), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:25:49,886 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:25:49,886 - utils - INFO - Adding transaction history for user 1
+2024-11-28 23:25:49,928 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:25:49,928 - utils - INFO - Transaction history added for user 1
+2024-11-28 23:25:49,929 - routes - INFO - User 1 deposited 100.0, new balance is 4297.0
+2024-11-28 23:25:50,186 - utils - INFO - Verifying token
+2024-11-28 23:25:50,209 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:50,210 - utils - INFO - Token verified successfully
+2024-11-28 23:25:50,210 - routes - INFO - User 1 is requesting balance
+2024-11-28 23:25:50,211 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:25:50,237 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:50,238 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:25:50,238 - routes - INFO - User 1 balance is 4297.0
+2024-11-28 23:25:50,487 - utils - INFO - Verifying token
+2024-11-28 23:25:50,511 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:50,512 - utils - INFO - Token verified successfully
+2024-11-28 23:25:50,512 - routes - INFO - User 1 is depositing -100.0
+2024-11-28 23:25:50,513 - routes - WARNING - User 1 attempted to deposit a non-positive amount: -100.0
+2024-11-28 23:25:50,763 - utils - INFO - Verifying token
+2024-11-28 23:25:50,788 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:50,789 - utils - INFO - Token verified successfully
+2024-11-28 23:25:50,789 - routes - INFO - User 1 is withdrawing 1000000.0
+2024-11-28 23:25:50,789 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:25:50,819 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:50,819 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:25:50,820 - routes - WARNING - User 1 has insufficient balance for withdrawal: 1000000.0
+2024-11-28 23:52:43,629 - utils - INFO - Verifying token
+2024-11-28 23:52:43,667 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:43,668 - utils - INFO - Token verified successfully
+2024-11-28 23:52:43,669 - routes - INFO - User 9 is depositing 111111.0
+2024-11-28 23:52:43,669 - utils - INFO - Fetching balance for user 9
+2024-11-28 23:52:43,696 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:43,696 - utils - INFO - Balance fetched for user 9
+2024-11-28 23:52:43,697 - utils - INFO - Updating balance for user 9 to 111111.0
+2024-11-28 23:52:43,739 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:43,740 - utils - INFO - Balance updated for user 9
+2024-11-28 23:52:43,745 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:52:43,745 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 42498), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:52:43,746 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:52:43,750 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:52:43,755 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:52:43,756 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:52:43,756 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:52:43,758 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:52:43,759 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feeea0b8b60> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:52:43,759 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:52:43,760 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:52:43,760 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 42498), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:52:43,760 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 42498), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:52:43,761 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 42498), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:52:43,761 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:52:43,761 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:52:43,761 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 42498), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:52:43,762 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:52:43,762 - utils - INFO - Adding transaction history for user 9
+2024-11-28 23:52:43,806 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:52:43,807 - utils - INFO - Transaction history added for user 9
+2024-11-28 23:52:43,807 - routes - INFO - User 9 deposited 111111.0, new balance is 111111.0
+2024-11-28 23:53:44,048 - utils - INFO - Verifying token
+2024-11-28 23:53:44,074 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:44,075 - utils - INFO - Token verified successfully
+2024-11-28 23:53:44,075 - routes - INFO - User 9 is requesting balance
+2024-11-28 23:53:44,076 - utils - INFO - Fetching balance for user 9
+2024-11-28 23:53:44,104 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:44,104 - utils - INFO - Balance fetched for user 9
+2024-11-28 23:53:44,105 - routes - INFO - User 9 balance is 111597.0
+2024-11-28 23:54:04,827 - utils - INFO - Verifying token
+2024-11-28 23:54:04,852 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:54:04,853 - utils - INFO - Token verified successfully
+2024-11-28 23:54:04,853 - routes - INFO - User 9 is withdrawing 111111.0
+2024-11-28 23:54:04,854 - utils - INFO - Fetching balance for user 9
+2024-11-28 23:54:04,882 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:54:04,882 - utils - INFO - Balance fetched for user 9
+2024-11-28 23:54:04,883 - utils - INFO - Updating balance for user 9 to 486.0
+2024-11-28 23:54:04,923 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:54:04,923 - utils - INFO - Balance updated for user 9
+2024-11-28 23:54:04,925 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:54:04,925 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49388), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:54:04,926 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:54:04,928 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:54:04,928 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:54:04,929 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:54:04,929 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:54:04,931 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:54:04,931 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df1520> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:54:04,932 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:54:04,932 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:54:04,933 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49388), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:54:04,933 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49388), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:54:04,933 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49388), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:54:04,933 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:54:04,933 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:54:04,934 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49388), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:54:04,934 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:54:04,934 - utils - INFO - Adding transaction history for user 9
+2024-11-28 23:54:04,985 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:54:04,986 - utils - INFO - Transaction history added for user 9
+2024-11-28 23:54:04,986 - routes - INFO - User 9 withdrew 111111.0, new balance is 486.0
+2024-11-28 23:54:11,092 - utils - INFO - Verifying token
+2024-11-28 23:54:11,120 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:54:11,121 - utils - INFO - Token verified successfully
+2024-11-28 23:54:11,121 - routes - INFO - User 9 is requesting balance
+2024-11-28 23:54:11,121 - utils - INFO - Fetching balance for user 9
+2024-11-28 23:54:11,150 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:54:11,150 - utils - INFO - Balance fetched for user 9
+2024-11-28 23:54:11,151 - routes - INFO - User 9 balance is 486.0
+2024-11-28 23:55:58,214 - utils - INFO - Verifying token
+2024-11-28 23:55:58,239 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,240 - utils - INFO - Token verified successfully
+2024-11-28 23:55:58,240 - routes - INFO - User 1 is depositing 100.0
+2024-11-28 23:55:58,240 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:55:58,266 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,267 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:55:58,267 - utils - INFO - Updating balance for user 1 to 4397.0
+2024-11-28 23:55:58,303 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,304 - utils - INFO - Balance updated for user 1
+2024-11-28 23:55:58,305 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.18.0.4', 5672)
+2024-11-28 23:55:58,306 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49636), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:55:58,306 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-11-28 23:55:58,309 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:55:58,309 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:55:58,309 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-11-28 23:55:58,310 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-11-28 23:55:58,311 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:55:58,312 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feee8df0110> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-11-28 23:55:58,312 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-11-28 23:55:58,312 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-11-28 23:55:58,313 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49636), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:55:58,313 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49636), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:55:58,313 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49636), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:55:58,313 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:55:58,314 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-11-28 23:55:58,314 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.18.0.7', 49636), raddr=('172.18.0.4', 5672)>
+2024-11-28 23:55:58,314 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-11-28 23:55:58,315 - utils - INFO - Adding transaction history for user 1
+2024-11-28 23:55:58,352 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,352 - utils - INFO - Transaction history added for user 1
+2024-11-28 23:55:58,353 - routes - INFO - User 1 deposited 100.0, new balance is 4397.0
+2024-11-28 23:55:58,599 - utils - INFO - Verifying token
+2024-11-28 23:55:58,635 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,636 - utils - INFO - Token verified successfully
+2024-11-28 23:55:58,636 - routes - INFO - User 1 is requesting balance
+2024-11-28 23:55:58,637 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:55:58,665 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,665 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:55:58,666 - routes - INFO - User 1 balance is 4397.0
+2024-11-28 23:55:58,920 - utils - INFO - Verifying token
+2024-11-28 23:55:58,946 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:58,946 - utils - INFO - Token verified successfully
+2024-11-28 23:55:58,947 - routes - INFO - User 1 is depositing -100.0
+2024-11-28 23:55:58,947 - routes - WARNING - User 1 attempted to deposit a non-positive amount: -100.0
+2024-11-28 23:55:59,203 - utils - INFO - Verifying token
+2024-11-28 23:55:59,231 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,231 - utils - INFO - Token verified successfully
+2024-11-28 23:55:59,232 - routes - INFO - User 1 is withdrawing 1000000.0
+2024-11-28 23:55:59,232 - utils - INFO - Fetching balance for user 1
+2024-11-28 23:55:59,260 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,261 - utils - INFO - Balance fetched for user 1
+2024-11-28 23:55:59,261 - routes - WARNING - User 1 has insufficient balance for withdrawal: 1000000.0
+2024-12-03 17:59:28,712 - utils - INFO - Verifying token
+2024-12-03 17:59:28,781 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 17:59:28,783 - utils - INFO - Token verified successfully
+2024-12-03 17:59:28,784 - routes - INFO - User 10 is depositing 1000000.0
+2024-12-03 17:59:28,784 - utils - INFO - Fetching balance for user 10
+2024-12-03 17:59:28,823 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 17:59:28,824 - utils - INFO - Balance fetched for user 10
+2024-12-03 17:59:28,825 - utils - INFO - Updating balance for user 10 to 1000000.0
+2024-12-03 17:59:28,887 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-12-03 17:59:28,889 - utils - INFO - Balance updated for user 10
+2024-12-03 17:59:28,896 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.3', 5672)
+2024-12-03 17:59:28,897 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 34648), raddr=('172.19.0.3', 5672)>
+2024-12-03 17:59:28,898 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-03 17:59:28,909 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 17:59:28,911 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 17:59:28,913 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 17:59:28,915 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-03 17:59:28,921 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 17:59:28,922 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca8563c20> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 17:59:28,924 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-03 17:59:28,925 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-03 17:59:28,927 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 34648), raddr=('172.19.0.3', 5672)>
+2024-12-03 17:59:28,927 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 34648), raddr=('172.19.0.3', 5672)>
+2024-12-03 17:59:28,928 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 34648), raddr=('172.19.0.3', 5672)>
+2024-12-03 17:59:28,929 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 17:59:28,929 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 17:59:28,930 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 34648), raddr=('172.19.0.3', 5672)>
+2024-12-03 17:59:28,930 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-03 17:59:28,931 - utils - INFO - Adding transaction history for user 10
+2024-12-03 17:59:29,001 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-12-03 17:59:29,004 - utils - INFO - Transaction history added for user 10
+2024-12-03 17:59:29,006 - routes - INFO - User 10 deposited 1000000.0, new balance is 1000000.0
+2024-12-03 18:00:09,319 - utils - INFO - Verifying token
+2024-12-03 18:00:09,352 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:00:09,353 - utils - INFO - Token verified successfully
+2024-12-03 18:00:09,355 - routes - INFO - User 10 is requesting balance
+2024-12-03 18:00:09,356 - utils - INFO - Fetching balance for user 10
+2024-12-03 18:00:09,393 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:00:09,394 - utils - INFO - Balance fetched for user 10
+2024-12-03 18:00:09,395 - routes - INFO - User 10 balance is 1000000.0
+2024-12-03 18:00:23,759 - utils - INFO - Verifying token
+2024-12-03 18:00:23,795 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:00:23,796 - utils - INFO - Token verified successfully
+2024-12-03 18:00:23,797 - routes - INFO - User 10 is withdrawing 1.0
+2024-12-03 18:00:23,797 - utils - INFO - Fetching balance for user 10
+2024-12-03 18:00:23,833 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:00:23,835 - utils - INFO - Balance fetched for user 10
+2024-12-03 18:00:23,835 - utils - INFO - Updating balance for user 10 to 999999.0
+2024-12-03 18:00:23,894 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-12-03 18:00:23,895 - utils - INFO - Balance updated for user 10
+2024-12-03 18:00:23,899 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.3', 5672)
+2024-12-03 18:00:23,900 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38822), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:00:23,901 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-03 18:00:23,924 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:00:23,926 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:00:23,928 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:00:23,929 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-03 18:00:23,933 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 18:00:23,934 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c0aa0> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 18:00:23,935 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-03 18:00:23,935 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-03 18:00:23,936 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38822), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:00:23,937 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38822), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:00:23,938 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38822), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:00:23,938 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 18:00:23,939 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 18:00:23,939 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38822), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:00:23,939 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-03 18:00:23,940 - utils - INFO - Adding transaction history for user 10
+2024-12-03 18:00:24,006 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-12-03 18:00:24,008 - utils - INFO - Transaction history added for user 10
+2024-12-03 18:00:24,009 - routes - INFO - User 10 withdrew 1.0, new balance is 999999.0
+2024-12-03 18:03:06,216 - utils - INFO - Verifying token
+2024-12-03 18:03:06,251 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:03:06,252 - utils - INFO - Token verified successfully
+2024-12-03 18:03:06,253 - routes - INFO - User 10 is requesting balance
+2024-12-03 18:03:06,254 - utils - INFO - Fetching balance for user 10
+2024-12-03 18:03:06,288 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:03:06,289 - utils - INFO - Balance fetched for user 10
+2024-12-03 18:03:06,290 - routes - INFO - User 10 balance is 12999987.0
+2024-12-03 18:03:14,614 - utils - INFO - Verifying token
+2024-12-03 18:03:14,648 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:03:14,650 - utils - INFO - Token verified successfully
+2024-12-03 18:03:14,651 - routes - INFO - User 10 is withdrawing 12999987.0
+2024-12-03 18:03:14,652 - utils - INFO - Fetching balance for user 10
+2024-12-03 18:03:14,689 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:03:14,691 - utils - INFO - Balance fetched for user 10
+2024-12-03 18:03:14,693 - utils - INFO - Updating balance for user 10 to 0.0
+2024-12-03 18:03:14,760 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-12-03 18:03:14,762 - utils - INFO - Balance updated for user 10
+2024-12-03 18:03:14,766 - pika.adapters.utils.connection_workflow - INFO - Pika version 1.3.2 connecting to ('172.19.0.3', 5672)
+2024-12-03 18:03:14,766 - pika.adapters.utils.io_services_utils - INFO - Socket connected: <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38904), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:03:14,768 - pika.adapters.utils.connection_workflow - INFO - Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2024-12-03 18:03:14,775 - pika.adapters.utils.connection_workflow - INFO - AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:03:14,775 - pika.adapters.utils.connection_workflow - INFO - AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:03:14,777 - pika.adapters.blocking_connection - INFO - Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2024-12-03 18:03:14,779 - pika.adapters.blocking_connection - INFO - Created channel=1
+2024-12-03 18:03:14,784 - pika.channel - INFO - Closing channel (0): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 18:03:14,786 - pika.channel - INFO - Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7feca82c1940> params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>>
+2024-12-03 18:03:14,787 - pika.adapters.blocking_connection - INFO - Closing connection (200): Normal shutdown
+2024-12-03 18:03:14,787 - pika.connection - INFO - Closing connection (200): 'Normal shutdown'
+2024-12-03 18:03:14,789 - pika.adapters.utils.io_services_utils - INFO - Aborting transport connection: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38904), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:03:14,790 - pika.adapters.utils.io_services_utils - INFO - _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38904), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:03:14,791 - pika.adapters.utils.io_services_utils - INFO - Deactivating transport: state=1; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38904), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:03:14,792 - pika.connection - INFO - AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 18:03:14,793 - pika.connection - INFO - Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2024-12-03 18:03:14,793 - pika.adapters.utils.io_services_utils - INFO - Closing transport socket and unlinking: state=3; <socket.socket fd=16, family=2, type=1, proto=6, laddr=('172.19.0.6', 38904), raddr=('172.19.0.3', 5672)>
+2024-12-03 18:03:14,794 - pika.adapters.blocking_connection - INFO - User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2024-12-03 18:03:14,795 - utils - INFO - Adding transaction history for user 10
+2024-12-03 18:03:14,868 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/transaction "HTTP/1.1 200 OK"
+2024-12-03 18:03:14,869 - utils - INFO - Transaction history added for user 10
+2024-12-03 18:03:14,870 - routes - INFO - User 10 withdrew 12999987.0, new balance is 0.0

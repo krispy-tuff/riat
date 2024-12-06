@@ -1,0 +1,252 @@
+2024-11-28 23:09:56,762 - routes - INFO - Registering user: zxc
+2024-11-28 23:09:56,789 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-28 23:09:57,056 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-11-28 23:09:57,056 - routes - INFO - User registered successfully: zxc
+2024-11-28 23:13:05,924 - routes - INFO - Verifying token
+2024-11-28 23:13:05,925 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:13:12,738 - routes - INFO - Verifying token
+2024-11-28 23:13:12,738 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:13:19,973 - routes - INFO - Verifying token
+2024-11-28 23:13:19,973 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:14:06,118 - routes - INFO - Verifying token
+2024-11-28 23:14:06,118 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:16:51,823 - routes - INFO - Verifying token
+2024-11-28 23:16:51,823 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:16:57,622 - routes - INFO - Verifying token
+2024-11-28 23:16:57,622 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:21:06,651 - routes - INFO - Verifying token
+2024-11-28 23:21:22,084 - routes - INFO - Verifying token
+2024-11-28 23:21:22,085 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:22:08,284 - routes - INFO - Verifying token
+2024-11-28 23:22:08,284 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:22:14,874 - routes - INFO - Verifying token
+2024-11-28 23:22:14,874 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:22:46,932 - routes - INFO - Verifying token
+2024-11-28 23:22:46,933 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:17,186 - routes - INFO - Verifying token
+2024-11-28 23:23:17,187 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:21,978 - routes - INFO - Verifying token
+2024-11-28 23:23:21,978 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:28,626 - routes - INFO - Verifying token
+2024-11-28 23:23:28,627 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:31,841 - routes - INFO - Verifying token
+2024-11-28 23:23:31,842 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:32,950 - routes - INFO - Verifying token
+2024-11-28 23:23:32,950 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:35,324 - routes - INFO - Verifying token
+2024-11-28 23:23:35,325 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:35,924 - routes - INFO - Verifying token
+2024-11-28 23:23:35,924 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:36,405 - routes - INFO - Verifying token
+2024-11-28 23:23:36,405 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:23:36,836 - routes - INFO - Verifying token
+2024-11-28 23:23:36,837 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:47,969 - routes - INFO - Registering user: testuser
+2024-11-28 23:25:48,242 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-11-28 23:25:48,243 - routes - INFO - User registered successfully: testuser
+2024-11-28 23:25:48,488 - routes - INFO - User login attempt: testuser
+2024-11-28 23:25:48,513 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=testuser "HTTP/1.1 200 OK"
+2024-11-28 23:25:48,733 - routes - INFO - User logged in successfully: testuser
+2024-11-28 23:25:48,991 - routes - INFO - Verifying token
+2024-11-28 23:25:48,991 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:49,241 - routes - INFO - User login attempt: wrong
+2024-11-28 23:25:49,268 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-11-28 23:25:49,268 - routes - WARNING - Invalid credentials for user: wrong
+2024-11-28 23:25:49,509 - routes - INFO - Verifying token
+2024-11-28 23:25:49,792 - routes - INFO - Verifying token
+2024-11-28 23:25:49,792 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:50,208 - routes - INFO - Verifying token
+2024-11-28 23:25:50,208 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:50,510 - routes - INFO - Verifying token
+2024-11-28 23:25:50,510 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:50,786 - routes - INFO - Verifying token
+2024-11-28 23:25:50,787 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:51,091 - routes - INFO - Verifying token
+2024-11-28 23:25:51,092 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:51,463 - routes - INFO - Verifying token
+2024-11-28 23:25:51,464 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:51,733 - routes - INFO - Verifying token
+2024-11-28 23:25:51,734 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:52,036 - routes - INFO - Verifying token
+2024-11-28 23:25:52,037 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:52,432 - routes - INFO - Verifying token
+2024-11-28 23:25:52,432 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:52,756 - routes - INFO - Verifying token
+2024-11-28 23:25:52,757 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:53,089 - routes - INFO - Verifying token
+2024-11-28 23:25:53,371 - routes - INFO - Verifying token
+2024-11-28 23:25:53,372 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:53,674 - routes - INFO - Verifying token
+2024-11-28 23:25:53,674 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:53,977 - routes - INFO - Verifying token
+2024-11-28 23:25:53,977 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:25:54,279 - routes - INFO - Verifying token
+2024-11-28 23:25:54,280 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:26:19,780 - routes - INFO - Verifying token
+2024-11-28 23:26:19,780 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:26:35,717 - routes - INFO - Verifying token
+2024-11-28 23:26:35,718 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:26:47,152 - routes - INFO - Verifying token
+2024-11-28 23:26:47,153 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:51:37,778 - routes - INFO - Registering user: test
+2024-11-28 23:51:37,828 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-11-28 23:51:38,119 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-11-28 23:51:38,119 - routes - INFO - User registered successfully: test
+2024-11-28 23:51:45,695 - routes - INFO - Registering user: test
+2024-11-28 23:51:45,942 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 400 Bad Request"
+2024-11-28 23:51:45,943 - routes - ERROR - Failed to register user: {'detail': 'Username already exists'}
+2024-11-28 23:51:54,362 - routes - INFO - User login attempt: test
+2024-11-28 23:51:54,390 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=test "HTTP/1.1 200 OK"
+2024-11-28 23:51:54,608 - routes - WARNING - Invalid password for user: test
+2024-11-28 23:51:57,939 - routes - INFO - User login attempt: test
+2024-11-28 23:51:57,967 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=test "HTTP/1.1 200 OK"
+2024-11-28 23:51:58,186 - routes - INFO - User logged in successfully: test
+2024-11-28 23:52:12,973 - routes - INFO - Verifying token
+2024-11-28 23:52:12,973 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:32,780 - routes - INFO - Verifying token
+2024-11-28 23:52:32,781 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:43,665 - routes - INFO - Verifying token
+2024-11-28 23:52:43,666 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:46,627 - routes - INFO - Verifying token
+2024-11-28 23:52:46,627 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:48,917 - routes - INFO - Verifying token
+2024-11-28 23:52:48,918 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:50,155 - routes - INFO - Verifying token
+2024-11-28 23:52:50,156 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:51,806 - routes - INFO - Verifying token
+2024-11-28 23:52:51,807 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:52,565 - routes - INFO - Verifying token
+2024-11-28 23:52:52,566 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:53,170 - routes - INFO - Verifying token
+2024-11-28 23:52:53,170 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:53,807 - routes - INFO - Verifying token
+2024-11-28 23:52:53,807 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:52:54,485 - routes - INFO - Verifying token
+2024-11-28 23:52:54,486 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:04,740 - routes - INFO - Verifying token
+2024-11-28 23:53:04,741 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:06,724 - routes - INFO - Verifying token
+2024-11-28 23:53:06,725 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:07,815 - routes - INFO - Verifying token
+2024-11-28 23:53:07,816 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:09,778 - routes - INFO - Verifying token
+2024-11-28 23:53:09,778 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:10,341 - routes - INFO - Verifying token
+2024-11-28 23:53:10,342 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:10,893 - routes - INFO - Verifying token
+2024-11-28 23:53:10,893 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:11,609 - routes - INFO - Verifying token
+2024-11-28 23:53:11,610 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:12,217 - routes - INFO - Verifying token
+2024-11-28 23:53:12,218 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:12,770 - routes - INFO - Verifying token
+2024-11-28 23:53:12,771 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:13,343 - routes - INFO - Verifying token
+2024-11-28 23:53:13,343 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:13,952 - routes - INFO - Verifying token
+2024-11-28 23:53:13,953 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:14,483 - routes - INFO - Verifying token
+2024-11-28 23:53:14,483 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:15,266 - routes - INFO - Verifying token
+2024-11-28 23:53:15,266 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:15,796 - routes - INFO - Verifying token
+2024-11-28 23:53:15,796 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:53:44,073 - routes - INFO - Verifying token
+2024-11-28 23:53:44,073 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:54:04,851 - routes - INFO - Verifying token
+2024-11-28 23:54:04,851 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:54:11,118 - routes - INFO - Verifying token
+2024-11-28 23:54:11,119 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:54:58,244 - routes - INFO - Verifying token
+2024-11-28 23:54:58,245 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:55:09,054 - routes - INFO - Verifying token
+2024-11-28 23:55:09,055 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:55:19,304 - routes - INFO - Verifying token
+2024-11-28 23:55:19,305 - routes - INFO - Token verified successfully for user_id: 9
+2024-11-28 23:55:56,385 - routes - INFO - Registering user: testuser
+2024-11-28 23:55:56,651 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-11-28 23:55:56,651 - routes - INFO - User registered successfully: testuser
+2024-11-28 23:55:56,916 - routes - INFO - User login attempt: testuser
+2024-11-28 23:55:56,942 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=testuser "HTTP/1.1 200 OK"
+2024-11-28 23:55:57,157 - routes - INFO - User logged in successfully: testuser
+2024-11-28 23:55:57,426 - routes - INFO - Verifying token
+2024-11-28 23:55:57,427 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:57,677 - routes - INFO - User login attempt: wrong
+2024-11-28 23:55:57,705 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=wrong "HTTP/1.1 404 Not Found"
+2024-11-28 23:55:57,705 - routes - WARNING - Invalid credentials for user: wrong
+2024-11-28 23:55:57,962 - routes - INFO - Verifying token
+2024-11-28 23:55:58,238 - routes - INFO - Verifying token
+2024-11-28 23:55:58,238 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:58,634 - routes - INFO - Verifying token
+2024-11-28 23:55:58,634 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:58,944 - routes - INFO - Verifying token
+2024-11-28 23:55:58,945 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:59,229 - routes - INFO - Verifying token
+2024-11-28 23:55:59,230 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:59,552 - routes - INFO - Verifying token
+2024-11-28 23:55:59,553 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:55:59,924 - routes - INFO - Verifying token
+2024-11-28 23:55:59,924 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:00,190 - routes - INFO - Verifying token
+2024-11-28 23:56:00,190 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:00,496 - routes - INFO - Verifying token
+2024-11-28 23:56:00,496 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:00,897 - routes - INFO - Verifying token
+2024-11-28 23:56:00,898 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:01,211 - routes - INFO - Verifying token
+2024-11-28 23:56:01,211 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:01,555 - routes - INFO - Verifying token
+2024-11-28 23:56:01,836 - routes - INFO - Verifying token
+2024-11-28 23:56:01,836 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:02,134 - routes - INFO - Verifying token
+2024-11-28 23:56:02,134 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:02,445 - routes - INFO - Verifying token
+2024-11-28 23:56:02,446 - routes - INFO - Token verified successfully for user_id: 1
+2024-11-28 23:56:02,748 - routes - INFO - Verifying token
+2024-11-28 23:56:02,748 - routes - INFO - Token verified successfully for user_id: 1
+2024-12-03 17:54:39,091 - routes - INFO - Registering user: krispy_tuff
+2024-12-03 17:54:39,137 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2024-12-03 17:54:39,421 - httpx - INFO - HTTP Request: POST http://db_service:8000/users/ "HTTP/1.1 200 OK"
+2024-12-03 17:54:39,422 - routes - INFO - User registered successfully: krispy_tuff
+2024-12-03 17:58:32,003 - routes - INFO - User login attempt: krispy_tuff
+2024-12-03 17:58:32,042 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=krispy_tuff "HTTP/1.1 200 OK"
+2024-12-03 17:58:32,256 - routes - INFO - User logged in successfully: krispy_tuff
+2024-12-03 17:58:47,751 - routes - INFO - User login attempt: krispy_tuff
+2024-12-03 17:58:47,790 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=krispy_tuff "HTTP/1.1 200 OK"
+2024-12-03 17:58:48,000 - routes - WARNING - Invalid password for user: krispy_tuff
+2024-12-03 17:58:58,807 - routes - INFO - User login attempt: krispy_tuff
+2024-12-03 17:58:58,845 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/by-username/?username=krispy_tuff "HTTP/1.1 200 OK"
+2024-12-03 17:58:59,057 - routes - INFO - User logged in successfully: krispy_tuff
+2024-12-03 17:59:28,777 - routes - INFO - Verifying token
+2024-12-03 17:59:28,779 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:00:09,350 - routes - INFO - Verifying token
+2024-12-03 18:00:09,350 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:00:23,793 - routes - INFO - Verifying token
+2024-12-03 18:00:23,794 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:01:38,660 - routes - INFO - Verifying token
+2024-12-03 18:01:38,661 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:02:05,446 - routes - INFO - Verifying token
+2024-12-03 18:02:05,447 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:03:06,249 - routes - INFO - Verifying token
+2024-12-03 18:03:06,249 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:03:14,645 - routes - INFO - Verifying token
+2024-12-03 18:03:14,646 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:04:22,382 - routes - INFO - Verifying token
+2024-12-03 18:04:22,383 - routes - INFO - Token verified successfully for user_id: 10
+2024-12-03 18:04:39,485 - routes - INFO - Verifying token
+2024-12-03 18:04:39,485 - routes - INFO - Token verified successfully for user_id: 10

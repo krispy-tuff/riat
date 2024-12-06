@@ -1,0 +1,371 @@
+2024-11-28 23:16:51,825 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:16:51,827 - routes - INFO - User 1 is playing roulette with bet amount 12.0 on color red
+2024-11-28 23:16:51,860 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:16:51,861 - game_logic - INFO - Playing roulette with bet amount 12.0 on color red
+2024-11-28 23:16:51,861 - game_logic - INFO - Roulette result: red, win amount: 24.0
+2024-11-28 23:16:51,906 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:16:51,951 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:16:51,952 - routes - INFO - User 1 played roulette and won 24.0, new balance is 4424.0
+2024-11-28 23:16:57,624 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:16:57,625 - routes - INFO - User 1 is playing slots with bet amount 122.0
+2024-11-28 23:16:57,653 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:16:57,654 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:16:57,655 - game_logic - INFO - Slots result: ['🍒', '🍋', '🔔'], win amount: 0.0
+2024-11-28 23:16:57,696 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:16:57,747 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:16:57,749 - routes - INFO - User 1 played slots and won 0.0, new balance is 4302.0
+2024-11-28 23:21:06,653 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 401 Unauthorized"
+2024-11-28 23:21:22,086 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:21:22,088 - routes - INFO - User 1 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:21:22,117 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:21:22,118 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:21:22,119 - game_logic - INFO - Roulette result: green, win amount: 0
+2024-11-28 23:21:22,162 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:21:22,202 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:21:22,203 - routes - INFO - User 1 played roulette and won 0, new balance is 4179.0
+2024-11-28 23:22:08,286 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:22:08,287 - routes - INFO - User 1 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:22:08,317 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:22:08,318 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:22:08,318 - game_logic - INFO - Roulette result: black, win amount: 0
+2024-11-28 23:22:08,362 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:22:08,402 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:22:08,402 - routes - INFO - User 1 played roulette and won 0, new balance is 4056.0
+2024-11-28 23:22:14,875 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:22:14,876 - routes - INFO - User 1 is playing slots with bet amount 12.0
+2024-11-28 23:22:14,912 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:22:14,913 - game_logic - INFO - Playing slots with bet amount 12.0
+2024-11-28 23:22:14,914 - game_logic - INFO - Slots result: ['🍋', '💎', '🔔'], win amount: 0.0
+2024-11-28 23:22:14,951 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:22:14,991 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:22:14,993 - routes - INFO - User 1 played slots and won 0.0, new balance is 4044.0
+2024-11-28 23:22:46,934 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:22:46,935 - routes - INFO - User 1 is playing slots with bet amount 12.0
+2024-11-28 23:22:46,964 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:22:46,965 - game_logic - INFO - Playing slots with bet amount 12.0
+2024-11-28 23:22:46,965 - game_logic - INFO - Slots result: ['🔔', '💎', '🍋'], win amount: 0.0
+2024-11-28 23:22:47,004 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:22:47,046 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:22:47,047 - routes - INFO - User 1 played slots and won 0.0, new balance is 4032.0
+2024-11-28 23:23:17,188 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:17,189 - routes - INFO - User 1 is playing roulette with bet amount 12.0 on color red
+2024-11-28 23:23:17,218 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:17,219 - game_logic - INFO - Playing roulette with bet amount 12.0 on color red
+2024-11-28 23:23:17,219 - game_logic - INFO - Roulette result: red, win amount: 24.0
+2024-11-28 23:23:17,257 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:17,300 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:17,302 - routes - INFO - User 1 played roulette and won 24.0, new balance is 4044.0
+2024-11-28 23:23:21,979 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:21,980 - routes - INFO - User 1 is playing roulette with bet amount 12.0 on color red
+2024-11-28 23:23:22,020 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:22,021 - game_logic - INFO - Playing roulette with bet amount 12.0 on color red
+2024-11-28 23:23:22,022 - game_logic - INFO - Roulette result: green, win amount: 0
+2024-11-28 23:23:22,068 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:22,107 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:22,108 - routes - INFO - User 1 played roulette and won 0, new balance is 4032.0
+2024-11-28 23:23:28,627 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:28,628 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:28,656 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:28,658 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:28,658 - game_logic - INFO - Slots result: ['⭐', '💎', '🍋'], win amount: 0.0
+2024-11-28 23:23:28,700 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:28,742 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:28,744 - routes - INFO - User 1 played slots and won 0.0, new balance is 3999.0
+2024-11-28 23:23:31,843 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:31,844 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:31,874 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:31,876 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:31,877 - game_logic - INFO - Slots result: ['💎', '🔔', '⭐'], win amount: 0.0
+2024-11-28 23:23:31,931 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:31,969 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:31,970 - routes - INFO - User 1 played slots and won 0.0, new balance is 3966.0
+2024-11-28 23:23:32,951 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:32,952 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:32,979 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:32,980 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:32,980 - game_logic - INFO - Slots result: ['🍋', '⭐', '🍋'], win amount: 66.0
+2024-11-28 23:23:33,024 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:33,061 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:33,062 - routes - INFO - User 1 played slots and won 66.0, new balance is 3999.0
+2024-11-28 23:23:35,326 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,327 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:35,354 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,355 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:35,355 - game_logic - INFO - Slots result: ['⭐', '💎', '🔔'], win amount: 0.0
+2024-11-28 23:23:35,401 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,443 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,444 - routes - INFO - User 1 played slots and won 0.0, new balance is 3966.0
+2024-11-28 23:23:35,925 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,926 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:35,952 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:35,953 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:35,954 - game_logic - INFO - Slots result: ['💎', '🍒', '🍋'], win amount: 0.0
+2024-11-28 23:23:35,997 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,039 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,040 - routes - INFO - User 1 played slots and won 0.0, new balance is 3933.0
+2024-11-28 23:23:36,406 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,407 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:36,433 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,435 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:36,435 - game_logic - INFO - Slots result: ['🍒', '🍒', '🍒'], win amount: 330.0
+2024-11-28 23:23:36,482 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,529 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,530 - routes - INFO - User 1 played slots and won 330.0, new balance is 4230.0
+2024-11-28 23:23:36,838 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,838 - routes - INFO - User 1 is playing slots with bet amount 33.0
+2024-11-28 23:23:36,864 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,865 - game_logic - INFO - Playing slots with bet amount 33.0
+2024-11-28 23:23:36,865 - game_logic - INFO - Slots result: ['🍋', '💎', '⭐'], win amount: 0.0
+2024-11-28 23:23:36,921 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,960 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:23:36,961 - routes - INFO - User 1 played slots and won 0.0, new balance is 4197.0
+2024-11-28 23:25:51,093 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,094 - routes - INFO - User 1 is playing roulette with bet amount 10.0 on color red
+2024-11-28 23:25:51,120 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,121 - game_logic - INFO - Playing roulette with bet amount 10.0 on color red
+2024-11-28 23:25:51,122 - game_logic - INFO - Roulette result: red, win amount: 20.0
+2024-11-28 23:25:51,157 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,196 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,197 - routes - INFO - User 1 played roulette and won 20.0, new balance is 4307.0
+2024-11-28 23:25:51,465 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,466 - routes - INFO - User 1 is playing roulette with bet amount 10.0 on color blue
+2024-11-28 23:25:51,466 - routes - WARNING - Invalid color choice by user 1: blue
+2024-11-28 23:25:51,734 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,735 - routes - INFO - User 1 is playing roulette with bet amount 100000.0 on color red
+2024-11-28 23:25:51,762 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:51,763 - routes - WARNING - User 1 has insufficient balance for bet amount 100000.0
+2024-11-28 23:25:52,038 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,039 - routes - INFO - User 1 is playing slots with bet amount 10.0
+2024-11-28 23:25:52,078 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,079 - game_logic - INFO - Playing slots with bet amount 10.0
+2024-11-28 23:25:52,079 - game_logic - INFO - Slots result: ['⭐', '🍒', '🍋'], win amount: 0.0
+2024-11-28 23:25:52,125 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,162 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,163 - routes - INFO - User 1 played slots and won 0.0, new balance is 4297.0
+2024-11-28 23:25:52,433 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,434 - routes - INFO - User 1 is playing slots with bet amount 100000.0
+2024-11-28 23:25:52,459 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:25:52,460 - routes - WARNING - User 1 has insufficient balance for bet amount 100000.0
+2024-11-28 23:52:32,782 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:32,785 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:32,816 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:32,817 - routes - WARNING - User 9 has insufficient balance for bet amount 123.0
+2024-11-28 23:52:46,628 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:46,629 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:46,660 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:46,660 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:46,661 - game_logic - INFO - Roulette result: red, win amount: 246.0
+2024-11-28 23:52:46,705 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:46,755 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:46,755 - routes - INFO - User 9 played roulette and won 246.0, new balance is 111234.0
+2024-11-28 23:52:48,919 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:48,919 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:48,947 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:48,948 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:48,948 - game_logic - INFO - Roulette result: black, win amount: 0
+2024-11-28 23:52:48,991 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:49,040 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:49,041 - routes - INFO - User 9 played roulette and won 0, new balance is 111111.0
+2024-11-28 23:52:50,157 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:50,157 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:50,184 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:50,185 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:50,185 - game_logic - INFO - Roulette result: red, win amount: 246.0
+2024-11-28 23:52:50,226 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:50,279 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:50,280 - routes - INFO - User 9 played roulette and won 246.0, new balance is 111234.0
+2024-11-28 23:52:51,808 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:51,809 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:51,838 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:51,839 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:51,839 - game_logic - INFO - Roulette result: red, win amount: 246.0
+2024-11-28 23:52:51,878 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:51,917 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:51,918 - routes - INFO - User 9 played roulette and won 246.0, new balance is 111357.0
+2024-11-28 23:52:52,567 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:52,568 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:52,593 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:52,594 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:52,594 - game_logic - INFO - Roulette result: green, win amount: 0
+2024-11-28 23:52:52,638 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:52,688 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:52,689 - routes - INFO - User 9 played roulette and won 0, new balance is 111234.0
+2024-11-28 23:52:53,171 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,172 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:53,199 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,200 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:53,200 - game_logic - INFO - Roulette result: green, win amount: 0
+2024-11-28 23:52:53,241 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,285 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,286 - routes - INFO - User 9 played roulette and won 0, new balance is 111111.0
+2024-11-28 23:52:53,808 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,809 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:53,836 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,837 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:53,837 - game_logic - INFO - Roulette result: black, win amount: 0
+2024-11-28 23:52:53,875 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,913 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:53,914 - routes - INFO - User 9 played roulette and won 0, new balance is 110988.0
+2024-11-28 23:52:54,487 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:52:54,488 - routes - INFO - User 9 is playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:54,515 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:52:54,516 - game_logic - INFO - Playing roulette with bet amount 123.0 on color red
+2024-11-28 23:52:54,516 - game_logic - INFO - Roulette result: black, win amount: 0
+2024-11-28 23:52:54,557 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:52:54,594 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:52:54,596 - routes - INFO - User 9 played roulette and won 0, new balance is 110865.0
+2024-11-28 23:53:04,742 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:04,743 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:04,773 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:04,774 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:04,774 - game_logic - INFO - Slots result: ['💎', '⭐', '🔔'], win amount: 0.0
+2024-11-28 23:53:04,814 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:04,853 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:04,854 - routes - INFO - User 9 played slots and won 0.0, new balance is 110743.0
+2024-11-28 23:53:06,726 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:06,726 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:06,755 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:06,755 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:06,756 - game_logic - INFO - Slots result: ['💎', '🔔', '⭐'], win amount: 0.0
+2024-11-28 23:53:06,809 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:06,851 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:06,852 - routes - INFO - User 9 played slots and won 0.0, new balance is 110621.0
+2024-11-28 23:53:07,817 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:07,818 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:07,846 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:07,847 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:07,848 - game_logic - INFO - Slots result: ['🍒', '🍋', '🍒'], win amount: 244.0
+2024-11-28 23:53:07,886 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:07,925 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:07,926 - routes - INFO - User 9 played slots and won 244.0, new balance is 110743.0
+2024-11-28 23:53:09,779 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:09,780 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:09,807 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:09,808 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:09,808 - game_logic - INFO - Slots result: ['🍒', '⭐', '🔔'], win amount: 0.0
+2024-11-28 23:53:09,848 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:09,887 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:09,888 - routes - INFO - User 9 played slots and won 0.0, new balance is 110621.0
+2024-11-28 23:53:10,343 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,344 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:10,370 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,371 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:10,371 - game_logic - INFO - Slots result: ['🔔', '⭐', '💎'], win amount: 0.0
+2024-11-28 23:53:10,410 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,446 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,447 - routes - INFO - User 9 played slots and won 0.0, new balance is 110499.0
+2024-11-28 23:53:10,894 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,895 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:10,922 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,922 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:10,923 - game_logic - INFO - Slots result: ['🔔', '🔔', '🍒'], win amount: 244.0
+2024-11-28 23:53:10,961 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,998 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:10,999 - routes - INFO - User 9 played slots and won 244.0, new balance is 110621.0
+2024-11-28 23:53:11,611 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:11,612 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:11,640 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:11,641 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:11,641 - game_logic - INFO - Slots result: ['💎', '🔔', '🍋'], win amount: 0.0
+2024-11-28 23:53:11,693 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:11,732 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:11,733 - routes - INFO - User 9 played slots and won 0.0, new balance is 110499.0
+2024-11-28 23:53:12,219 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,219 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:12,246 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,247 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:12,248 - game_logic - INFO - Slots result: ['🔔', '🍒', '🍋'], win amount: 0.0
+2024-11-28 23:53:12,286 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,323 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,324 - routes - INFO - User 9 played slots and won 0.0, new balance is 110377.0
+2024-11-28 23:53:12,772 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,773 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:12,799 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,800 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:12,800 - game_logic - INFO - Slots result: ['🔔', '🍒', '🔔'], win amount: 244.0
+2024-11-28 23:53:12,838 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,876 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:12,877 - routes - INFO - User 9 played slots and won 244.0, new balance is 110499.0
+2024-11-28 23:53:13,344 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,346 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:13,373 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,373 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:13,374 - game_logic - INFO - Slots result: ['🍒', '⭐', '🔔'], win amount: 0.0
+2024-11-28 23:53:13,421 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,458 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,459 - routes - INFO - User 9 played slots and won 0.0, new balance is 110377.0
+2024-11-28 23:53:13,954 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,955 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:13,981 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:13,982 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:13,982 - game_logic - INFO - Slots result: ['⭐', '🔔', '🍒'], win amount: 0.0
+2024-11-28 23:53:14,023 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,061 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,062 - routes - INFO - User 9 played slots and won 0.0, new balance is 110255.0
+2024-11-28 23:53:14,484 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,485 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:14,511 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,512 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:14,512 - game_logic - INFO - Slots result: ['🍋', '🔔', '🔔'], win amount: 244.0
+2024-11-28 23:53:14,564 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,602 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:14,603 - routes - INFO - User 9 played slots and won 244.0, new balance is 110377.0
+2024-11-28 23:53:15,267 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,268 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:15,294 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,295 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:15,295 - game_logic - INFO - Slots result: ['🍒', '🍒', '🍒'], win amount: 1220.0
+2024-11-28 23:53:15,333 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,372 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,373 - routes - INFO - User 9 played slots and won 1220.0, new balance is 111475.0
+2024-11-28 23:53:15,797 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,798 - routes - INFO - User 9 is playing slots with bet amount 122.0
+2024-11-28 23:53:15,831 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=9 "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,832 - game_logic - INFO - Playing slots with bet amount 122.0
+2024-11-28 23:53:15,832 - game_logic - INFO - Slots result: ['⭐', '💎', '⭐'], win amount: 244.0
+2024-11-28 23:53:15,870 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,912 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:53:15,913 - routes - INFO - User 9 played slots and won 244.0, new balance is 111597.0
+2024-11-28 23:55:59,553 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,554 - routes - INFO - User 1 is playing roulette with bet amount 10.0 on color red
+2024-11-28 23:55:59,580 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,581 - game_logic - INFO - Playing roulette with bet amount 10.0 on color red
+2024-11-28 23:55:59,581 - game_logic - INFO - Roulette result: green, win amount: 0
+2024-11-28 23:55:59,618 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,654 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,655 - routes - INFO - User 1 played roulette and won 0, new balance is 4387.0
+2024-11-28 23:55:59,925 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:55:59,926 - routes - INFO - User 1 is playing roulette with bet amount 10.0 on color blue
+2024-11-28 23:55:59,926 - routes - WARNING - Invalid color choice by user 1: blue
+2024-11-28 23:56:00,191 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,192 - routes - INFO - User 1 is playing roulette with bet amount 100000.0 on color red
+2024-11-28 23:56:00,218 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,219 - routes - WARNING - User 1 has insufficient balance for bet amount 100000.0
+2024-11-28 23:56:00,497 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,498 - routes - INFO - User 1 is playing slots with bet amount 10.0
+2024-11-28 23:56:00,523 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,523 - game_logic - INFO - Playing slots with bet amount 10.0
+2024-11-28 23:56:00,524 - game_logic - INFO - Slots result: ['💎', '🍒', '🔔'], win amount: 0.0
+2024-11-28 23:56:00,565 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,612 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,612 - routes - INFO - User 1 played slots and won 0.0, new balance is 4377.0
+2024-11-28 23:56:00,899 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,900 - routes - INFO - User 1 is playing slots with bet amount 100000.0
+2024-11-28 23:56:00,931 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=1 "HTTP/1.1 200 OK"
+2024-11-28 23:56:00,932 - routes - WARNING - User 1 has insufficient balance for bet amount 100000.0
+2024-12-03 18:01:38,663 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:01:38,666 - routes - INFO - User 10 is playing roulette with bet amount 999999.0 on color green
+2024-12-03 18:01:38,715 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:01:38,717 - game_logic - INFO - Playing roulette with bet amount 999999.0 on color green
+2024-12-03 18:01:38,718 - game_logic - INFO - Roulette result: green, win amount: 13999986.0
+2024-12-03 18:01:38,781 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-12-03 18:01:38,842 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-12-03 18:01:38,844 - routes - INFO - User 10 played roulette and won 13999986.0, new balance is 13999986.0
+2024-12-03 18:02:05,449 - httpx - INFO - HTTP Request: POST http://auth_service:8001/auth/verify-token "HTTP/1.1 200 OK"
+2024-12-03 18:02:05,451 - routes - INFO - User 10 is playing slots with bet amount 999999.0
+2024-12-03 18:02:05,490 - httpx - INFO - HTTP Request: GET http://db_service:8000/users/?user_id=10 "HTTP/1.1 200 OK"
+2024-12-03 18:02:05,493 - game_logic - INFO - Playing slots with bet amount 999999.0
+2024-12-03 18:02:05,494 - game_logic - INFO - Slots result: ['🍒', '🍋', '⭐'], win amount: 0.0
+2024-12-03 18:02:05,558 - httpx - INFO - HTTP Request: PATCH http://db_service:8000/users/update-balance "HTTP/1.1 200 OK"
+2024-12-03 18:02:05,634 - httpx - INFO - HTTP Request: POST http://db_service:8000/history/game "HTTP/1.1 200 OK"
+2024-12-03 18:02:05,636 - routes - INFO - User 10 played slots and won 0.0, new balance is 12999987.0
